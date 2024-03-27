@@ -2,6 +2,7 @@ import React, {FC,useState} from 'react';
 import AddPizzaForm from './components/AddPizzaForm'
 import './App.css';
 import Pizza from './models/Pizza'
+import DisplayPizzas from './components/DisplayPizzas';
 
 
 
@@ -18,6 +19,9 @@ console.log('pizzasList>>', pizzasList)
         <span className='heading'> Наша пиццерия </span>
         <AddPizzaForm
         addPizza={addPizza}
+        />
+        <DisplayPizzas
+        pizzasList={pizzasList}
         />
       </div>
     </div>
